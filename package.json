@@ -1,10 +1,10 @@
 {
   "name": "html5video",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "支持Ios、Andriod和微信播放的HTML5播放器，UI在各平台保持一致并支持全屏播放。",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
