@@ -6,6 +6,12 @@
     transition: all .2s linear;
 }
 
+.html-5-video-container * {
+    box-sizing: content-box;
+    text-align: left;
+    font-size: 14px;
+}
+
 .html-5-video-container.playing .html-5-video-play-icon {
     display: none;
 }
@@ -146,7 +152,6 @@
     margin: 0 auto;
     display: block;
     background-color: #000;
-    box-sizing: content-box;
 }
 
 .html-5-video-player[ishivideo="true"]::-webkit-media-controls {

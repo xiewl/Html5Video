@@ -344,6 +344,6 @@
     }
 
     window.html5Video = (selector, options) => {
-        return new Html5Video(selector, options);
+        return new Html5Video(selector, options).init();
     }
 })(window, document);
