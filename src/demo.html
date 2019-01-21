@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Html5Video.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div>支持Ios、Andriod和微信播放的HTML5播放器，UI在各平台保持一致并支持全屏播放。</div>
+<div id="video"></div>
+<div>支持Ios、Andriod和微信播放的HTML5播放器，UI在各平台保持一致并支持全屏播放。</div>
+<script src="./js/Html5Video.js"></script>
+<script>
+    html5Video('#video', {
+        src: 'http://onehk-1251146759.cosgz.myqcloud.com/video_171129.mp4',
+        poster: 'https://zs.manyiwl.com/uploads/image/20171231/1514657764.jpg'
+    }).init();
+</script>
+</body>
+</html>

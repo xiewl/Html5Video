@@ -1,0 +1,29 @@
+{
+  "name": "html5video",
+  "version": "1.0.0",
+  "description": "支持Ios、Andriod和微信播放的HTML5播放器，UI在各平台保持一致并支持全屏播放。",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiewl/Html5Video.git"
+  },
+  "author": "xiewulong@100tal.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiewl/Html5Video/issues"
+  },
+  "homepage": "https://github.com/xiewl/Html5Video#readme",
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^1.4.0"
+  }
+}
