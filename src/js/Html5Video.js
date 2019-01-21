@@ -130,13 +130,15 @@
                 const val = range.value;
                 range.style.backgroundSize = "" + val + "% 100%";
                 this.player.currentTime = this.player.duration * (val / 100);
-
+                this.showTips(` 跳转到 ${Html5Video.formatToMinute(this.player.currentTime)}`);
+                this.selector.querySelector('#playIcon').click();
             });
             // 点击进度条
             range.addEventListener("input", () => {
+                this.selector.querySelector('#pauseIcon').click();
                 const val = range.value;
                 range.style.backgroundSize = "" + val + "% 100%";
-
+                this.selector.querySelector('.html-5-video-controls-current-time').innerText = Html5Video.formatToMinute(this.player.duration * (val / 100));
             });
         }
 
@@ -253,7 +255,7 @@
                         this.setPlayerClassName('playing');
                         freshTimer = setTimeout(() => {
                             this.setPlayerClassName('playing', 'fresh');
-                        }, 1500);
+                        }, 2000);
                     }
                     break;
                 case 'fullscreenIcon':
