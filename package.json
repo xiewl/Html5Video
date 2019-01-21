@@ -1,6 +1,6 @@
 {
   "name": "html5video",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "支持Ios、Andriod和微信播放的HTML5播放器，UI在各平台保持一致并支持全屏播放。",
   "main": "index.js",
   "scripts": {
